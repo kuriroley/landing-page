@@ -1,3 +1,9 @@
+:root{
+  --examplegreen: #69e5b5;
+  --buttongreen: #41fea0;
+  --backgroundpurple: #24053e;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -8,17 +14,29 @@ body{
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  background-color: #24053e;
-  color: white;
-  padding: 20px;
+  background-color: white;
   min-height: 100vh;
 }
+.container{
+  background-color: var(--backgroundpurple);
+  color: white;
+  border-radius: 0px 0px 30% 30%;
+  padding: 20px;
+}
+
 .navbar{
   display: flex;
   padding: 20px;
   width: 100%;
   justify-content: space-around;
-  
+  margin-bottom: 50px;
+}
+.logo,
+.apply{
+  font-size: 35px;
+}
+.apply  span{
+  text-decoration: underline var(--examplegreen);
 }
 
 .header{
@@ -29,9 +47,18 @@ body{
   gap: 40px;
 }
 .main-text{
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
-.main-text > p{
+.main-text span {
+  text-decoration: underline var(--examplegreen);
+}
+.learn-button{
+  color: rgb(14, 40, 13);
+  background-color: var(--buttongreen);
+  height: 60px;
+  width: 150px;
   text-align: center;
+  font-size: 18px;
+  border: solid var(--buttongreen);
 }

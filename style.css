@@ -2,6 +2,7 @@
   --examplegreen: #69e5b5;
   --buttongreen: #41fea0;
   --backgroundpurple: #24053e;
+  --backgroundgray: #fbf8ff;
 }
 
 *{
@@ -20,15 +21,17 @@ body{
 .container{
   background-color: var(--backgroundpurple);
   color: white;
-  border-radius: 0px 0px 30% 30%;
+  border-radius: 0px 0px 20% 20%;
+  height: 650px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
-
 .navbar{
   display: flex;
   padding: 20px;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 .logo,
@@ -61,4 +64,44 @@ body{
   text-align: center;
   font-size: 18px;
   border: solid var(--buttongreen);
+}
+
+.middle-data{
+  background-color: var(--backgroundgray);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* flex-direction: row; */
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  text-align: center;
+  border-radius: 0px 0px 20% 20%;
+}
+.number{
+  border-radius: 50%;
+  align-self: center;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border: solid black 1px;
+  background: #fff;
+}
+.one-data{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #24053e;
+}
+.two-data{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+}
+.three-data{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }

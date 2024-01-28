@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Fraunces&family=Manrope);
 :root{
   --examplegreen: #69e5b5;
   --buttongreen: #41fea0;
@@ -8,4 +9,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--backgroundpurple);
+  color: white;
+}
+
+.apply{
+  font-size: 1.5rem;
+  font-family: 'Manrope';
+  text-decoration: underline 2px var(--examplegreen);
+}
+
+.hero-container{
+  background-color: var(--backgroundpurple);
+  color: rgb(0, 0, 0);
+}
+.hero-content{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+.hero-content span{
+  text-decoration: underline 2px var(--examplegreen);
 }
